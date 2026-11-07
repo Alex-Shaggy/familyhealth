@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FamilyHealth Hilfe</title>
+<meta name="description" content="Hilfe und Kontakt für die iPhone-App FamilyHealth · Help and contact for the iPhone app FamilyHealth">
+<meta name="robots" content="index, follow">
+<!--
+  Support-URL für App Store Connect. Eigenständig: keine externen Schriften, Skripte, Bilder oder Cookies.
+  Liegt im selben Ordner wie datenschutz.html (relativer Link).
+  Die markierten Absätze zur Übernahme aus Apple Health entfernen, wenn die Funktion im Store-Build abgeschaltet ist.
+-->
+<style>
+:root {
+  --bg: #F4F1EB;
+  --paper: #FFFFFF;
+  --ink: #1D1B18;
+  --muted: #615C55;
+  --accent: #2B47A6;
+  --line: #E4DFD6;
+  --bad: #C2302A;
+  --rounded: ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  --body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12110F; --paper: #1D1C1A; --ink: #F1EEE8; --muted: #A9A398; --accent: #8FA3F5;
+    --line: #34312C; --bad: #FF7A70; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12110F; --paper: #1D1C1A; --ink: #F1EEE8; --muted: #A9A398; --accent: #8FA3F5;
+  --line: #34312C; --bad: #FF7A70; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+nav.lang { display: flex; gap: 8px; justify-content: flex-end; font-size: 15px; }
+nav.lang a { color: var(--accent); text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 99px; border: 1px solid var(--line); background: var(--paper); }
+nav.lang a:hover { border-color: var(--accent); }
+.brand { display: flex; align-items: center; gap: 12px; margin: 28px 0 6px; }
+.brand svg { flex: none; }
+.app { font-family: var(--rounded); font-weight: 700; color: var(--muted); font-size: 17px; }
+h1 { font-family: var(--rounded); font-weight: 800; font-size: clamp(30px, 6vw, 40px); line-height: 1.12; margin: 0 0 6px; text-wrap: balance; }
+.lead { color: var(--muted); margin: 0 0 24px; }
+h2 { font-family: var(--rounded); font-weight: 700; font-size: 21px; line-height: 1.3; margin: 36px 0 10px; text-wrap: balance; }
+p, ul, ol { margin: 0 0 12px; }
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: 4px; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 18px 20px; margin: 0 0 12px; }
+.card p:last-child { margin-bottom: 0; }
+.contact .mail { display: inline-block; margin: 4px 0 10px; font-family: var(--rounded); font-weight: 700; font-size: 20px; color: var(--accent); text-decoration: none; }
+.contact .mail:hover { text-decoration: underline; }
+.contact .hint { color: var(--muted); font-size: 15px; }
+.emergency { border-color: color-mix(in srgb, var(--bad) 35%, var(--line)); }
+.emergency strong { color: var(--bad); }
+details { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; margin: 0 0 8px; }
+details[open] { padding-bottom: 6px; }
+summary { cursor: pointer; list-style: none; padding: 13px 44px 13px 18px; font-weight: 600; position: relative; min-height: 44px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ""; position: absolute; right: 20px; top: 50%; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-70%) rotate(45deg); transition: transform .2s; }
+details[open] summary::after { transform: translateY(-30%) rotate(225deg); }
+summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 16px; }
+details > :not(summary) { margin-left: 18px; margin-right: 18px; }
+.path { font-weight: 600; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 0; }
+footer { color: var(--muted); font-size: 14px; margin-top: 40px; }
+@media (prefers-reduced-motion: reduce) { summary::after { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang" aria-label="Sprache / Language">
+  <a href="#de" hreflang="de">Deutsch</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+
+<!-- ============================== DEUTSCH ============================== -->
+<article id="de" lang="de">
+  <div class="brand">
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+      <g fill="none" stroke-width="5.5" stroke-dasharray="19 68.96" transform="rotate(6.1 20 20)">
+        <circle cx="20" cy="20" r="14" stroke="#2F6BD9"/>
+        <circle cx="20" cy="20" r="14" stroke="#C2335F" stroke-dashoffset="-21.99"/>
+        <circle cx="20" cy="20" r="14" stroke="#0E7C82" stroke-dashoffset="-43.98"/>
+        <circle cx="20" cy="20" r="14" stroke="#8C44C2" stroke-dashoffset="-65.97"/>
+      </g>
+      <path d="M20 13v14M13 20h14" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <span class="app">FamilyHealth</span>
+  </div>
+  <h1>Hilfe und Kontakt</h1>
+  <p class="lead">Antworten auf häufige Fragen und der direkte Weg zu uns.</p>
+
+  <section class="card contact" aria-labelledby="de-kontakt">
+    <h2 id="de-kontakt" style="margin-top:0">Kontakt</h2>
+    <p>Fragen, Fehler oder Wünsche? Schreib uns:</p>
+    <a class="mail" href="mailto:alexshagov@icloud.com?subject=FamilyHealth">alexshagov@icloud.com</a>
+    <p class="hint">Hilfreich sind iPhone-Modell, iOS-Version und App-Version (<span class="path">Einstellungen → Version</span> in der App). Bitte schick keine Gesundheitsdaten mit, eine Beschreibung reicht.</p>
+  </section>
+
+  <section class="card emergency">
+    <p><strong>Im Notfall: 112.</strong> FamilyHealth ist kein Notdienst und kein Medizinprodukt. Die App organisiert und erinnert, ersetzt aber keinen ärztlichen Rat.</p>
+  </section>
+
+  <h2>Erste Schritte</h2>
+  <details>
+    <summary>Wo finde ich die Einstellungen?</summary>
+    <p>Tippe oben rechts auf das runde Profilsymbol, zum Beispiel in „Heute“.</p>
+  </details>
+  <details>
+    <summary>Brauche ich ein Konto?</summary>
+    <p>Nein. FamilyHealth hat keine eigenen Konten. Abgleich und Teilen laufen über deinen Apple-Account und iCloud. Ohne iCloud funktioniert die App auch, die Daten bleiben dann nur auf dem iPhone.</p>
+  </details>
+
+  <h2>Abgleich und Teilen</h2>
+  <details>
+    <summary>Meine Daten erscheinen nicht auf meinem anderen iPhone.</summary>
+    <ol>
+      <li>Auf beiden Geräten mit demselben Apple-Account bei iCloud anmelden.</li>
+      <li>In der App unter <span class="path">Einstellungen → Profil und iCloud</span> den Status prüfen. Steht dort „Nicht bei iCloud angemeldet“, bleiben die Daten auf diesem Gerät.</li>
+      <li>Die App auf beiden Geräten öffnen; der Abgleich braucht manchmal einen Moment.</li>
+    </ol>
+  </details>
+  <details>
+    <summary>Wie teile ich das Profil eines Angehörigen?</summary>
+    <p>Öffne <span class="path">Familie → Person</span> und tippe oben auf das Teilen-Symbol (Person mit Plus). Wähle, wie du die Einladung verschickst und ob die andere Person nur lesen oder auch bearbeiten darf. Sie braucht FamilyHealth und iCloud auf ihrem iPhone. Erscheint „Teilen braucht iCloud“, melde dich zuerst bei iCloud an.</p>
+  </details>
+  <details>
+    <summary>Wie beende ich das Teilen?</summary>
+    <p>Bei einer geteilten Person zeigt das Symbol oben zwei Personen. Tippe darauf und wähle „Teilen beenden“. Eingeladene können eine Freigabe auf demselben Weg verlassen.</p>
+  </details>
+  <details>
+    <summary>Muss jedes Familien-iPhone bei jeder Erinnerung klingeln?</summary>
+    <p>Nein. Unter <span class="path">Einstellungen → Erinnerungen → Erinnern auf diesem iPhone für</span> legst du auf jedem Gerät selbst fest, für wen es erinnert.</p>
+  </details>
+
+  <h2>Erinnerungen</h2>
+  <details>
+    <summary>Ich bekomme keine Erinnerungen.</summary>
+    <ul>
+      <li>Unter <span class="path">Einstellungen → Erinnerungen</span> Mitteilungen erlauben, oder in den iOS-Einstellungen unter <span class="path">Mitteilungen → FamilyHealth</span>.</li>
+      <li>Prüfen, ob die Person unter „Erinnern auf diesem iPhone für“ eingeschaltet ist.</li>
+      <li>Ein Fokus wie „Nicht stören“ kann Mitteilungen zurückhalten.</li>
+    </ul>
+  </details>
+  <details>
+    <summary>Warum stehen keine Medikamentennamen in den Mitteilungen?</summary>
+    <p>Damit auf dem Sperrbildschirm niemand mitliest, sind sie anfangs ausgeblendet. Einschalten unter <span class="path">Einstellungen → Erinnerungen → Medikamentennamen</span>.</p>
+  </details>
+  <details>
+    <summary>Wie schalte ich den Hinweis am Morgen ab?</summary>
+    <p>Unter <span class="path">Einstellungen → Erinnerungen → Überfälliges und Offenes</span>. Dieser Schalter steuert die zweite Erinnerung, wenn eine Einnahme nach zwei Stunden noch offen ist, und den Hinweis um 9:00 Uhr bei Überfälligem oder knappem Vorrat.</p>
+  </details>
+
+  <h2>Apple Health</h2>
+  <details>
+    <summary>Wie verbinde ich Apple Health?</summary>
+    <p>Unter <span class="path">Einstellungen → Apple Health → Verbinden</span> und die gewünschten Werte erlauben. Die Werte erscheinen beim eigenen Profil, nur auf diesem iPhone gelesen und nie in iCloud gespeichert.</p>
+  </details>
+  <details>
+    <summary>Es steht „Noch keine Daten aus Apple Health“.</summary>
+    <p>Öffne die Health-App, tippe auf dein Profilbild, dann auf <span class="path">Apps → FamilyHealth</span>, und erlaube das Lesen. iOS teilt Apps nicht mit, ob das Lesen erlaubt ist; deshalb kann FamilyHealth nicht unterscheiden, ob keine Daten da sind oder der Zugriff fehlt.</p>
+  </details>
+  <details>
+    <summary>Kann ich Apple-Health-Daten sehen, die mir ein Angehöriger in der Health-App freigibt?</summary>
+    <p>Nein. Was andere in der Health-App unter „Teilen“ freigeben, kann iOS an keine App weitergeben.</p>
+    <!-- Übernahme aus Apple Health: entfernen, wenn die Funktion im Store-Build abgeschaltet ist. -->
+    <p>Der Weg über FamilyHealth: Die betreute Person installiert die App auf ihrem iPhone, wählt unter <span class="path">Einstellungen → Apple Health → Gehört zu</span> das mit ihr geteilte Profil und schaltet „Werte übernehmen“ ein. Dann erscheinen ihre Werte in ihrem Profil.</p>
+  </details>
+
+  <h2>Notfall, Berichte, Kalender</h2>
+  <details>
+    <summary>Wie erstelle ich die Notfallkarte oder einen Arztbericht?</summary>
+    <p>Öffne <span class="path">Familie → Person</span> und tippe oben auf das Dokument-Symbol, dann auf „Arztbericht“ oder „Notfallkarte“. Die Notfallkarte gibt es auch unter <span class="path">Notfall → Notfallkarte als PDF</span>. Beide kannst du teilen, drucken oder in Dateien sichern.</p>
+  </details>
+  <details>
+    <summary>Wie übernehme ich einen Termin in den iOS-Kalender?</summary>
+    <p>Termin öffnen und „In Kalender übernehmen“ wählen. Das ist eine einmalige Kopie; spätere Änderungen in FamilyHealth werden nicht übertragen.</p>
+  </details>
+
+  <h2>Widgets</h2>
+  <details>
+    <summary>Wie lege ich ein Widget an?</summary>
+    <p>Auf dem Home-Bildschirm lange auf eine freie Stelle drücken, <span class="path">Bearbeiten → Widget hinzufügen</span> wählen und nach FamilyHealth suchen. Es gibt „Medikamente heute“, „Nächste Termine“ und „Fällig“. Für eine einzelne Person: lange auf das Widget drücken und „Widget bearbeiten“ wählen.</p>
+  </details>
+  <details>
+    <summary>Kann ich Einnahmen im Widget abhaken?</summary>
+    <p>Ja, im Widget „Medikamente heute“ auf das Kästchen tippen. Die App trägt die Einnahme ein, sobald sie das nächste Mal läuft. Ist die App-Sperre an, zeigen die Widgets nur Zahlen.</p>
+  </details>
+
+  <h2>Sicherheit und Daten</h2>
+  <details>
+    <summary>Wie schütze ich die App mit Face ID?</summary>
+    <p>Unter <span class="path">Einstellungen → Mit Face ID sperren</span>. Dafür muss auf dem iPhone ein Code eingerichtet sein. Die App fragt danach, wenn sie eine Minute im Hintergrund war.</p>
+  </details>
+  <details>
+    <summary>Ich habe ein neues iPhone. Wie kommen meine Daten mit?</summary>
+    <p>Mit demselben Apple-Account bei iCloud anmelden und FamilyHealth installieren; die Daten kommen aus iCloud. Lief die App bisher ohne iCloud, liegen die Daten nur auf dem alten Gerät.</p>
+  </details>
+  <details>
+    <summary>Wie lösche ich alle Daten?</summary>
+    <p>Unter <span class="path">Einstellungen → Profil und iCloud → Alle Daten löschen</span>. Das entfernt alle Personen mit allen Einträgen und Dokumenten auf dem Gerät und in iCloud und lässt sich nicht rückgängig machen.</p>
+  </details>
+  <details>
+    <summary>Wie werden meine Daten geschützt?</summary>
+    <p>Keine eigenen Server, keine Werbung, kein Tracking. Die Einzelheiten stehen in der <a href="datenschutz.html#de">Datenschutzerklärung</a> und in der App unter <span class="path">Einstellungen → So sind deine Daten geschützt</span>.</p>
+  </details>
+</article>
+
+<hr>
+
+<!-- ============================== ENGLISH ============================== -->
+<article id="en" lang="en">
+  <div class="brand">
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+      <g fill="none" stroke-width="5.5" stroke-dasharray="19 68.96" transform="rotate(6.1 20 20)">
+        <circle cx="20" cy="20" r="14" stroke="#2F6BD9"/>
+        <circle cx="20" cy="20" r="14" stroke="#C2335F" stroke-dashoffset="-21.99"/>
+        <circle cx="20" cy="20" r="14" stroke="#0E7C82" stroke-dashoffset="-43.98"/>
+        <circle cx="20" cy="20" r="14" stroke="#8C44C2" stroke-dashoffset="-65.97"/>
+      </g>
+      <path d="M20 13v14M13 20h14" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <span class="app">FamilyHealth</span>
+  </div>
+  <h1>Help and contact</h1>
+  <p class="lead">Answers to common questions and the direct way to reach us.</p>
+
+  <section class="card contact" aria-labelledby="en-contact">
+    <h2 id="en-contact" style="margin-top:0">Contact</h2>
+    <p>Questions, bugs or wishes? Write to us:</p>
+    <a class="mail" href="mailto:alexshagov@icloud.com?subject=FamilyHealth">alexshagov@icloud.com</a>
+    <p class="hint">It helps to include your iPhone model, iOS version and app version (<span class="path">Settings → Version</span> in the app). Please do not send health data; a description is enough.</p>
+  </section>
+
+  <section class="card emergency">
+    <p><strong>In an emergency, call your local emergency number (112 in Europe).</strong> FamilyHealth is neither an emergency service nor a medical device. It organises and reminds, but does not replace medical advice.</p>
+  </section>
+
+  <h2>Getting started</h2>
+  <details>
+    <summary>Where are the settings?</summary>
+    <p>Tap the round profile button at the top right, for example in "Today".</p>
+  </details>
+  <details>
+    <summary>Do I need an account?</summary>
+    <p>No. FamilyHealth has no accounts of its own. Sync and sharing use your Apple Account and iCloud. The app also works without iCloud; your data then stays on this iPhone only.</p>
+  </details>
+
+  <h2>Sync and sharing</h2>
+  <details>
+    <summary>My data does not appear on my other iPhone.</summary>
+    <ol>
+      <li>Sign in to iCloud with the same Apple Account on both devices.</li>
+      <li>Check the status in the app under <span class="path">Settings → Profile and iCloud</span>. If it says "Not signed in to iCloud", the data stays on this device.</li>
+      <li>Open the app on both devices; syncing can take a moment.</li>
+    </ol>
+  </details>
+  <details>
+    <summary>How do I share a relative's profile?</summary>
+    <p>Open <span class="path">Family → person</span> and tap the share button at the top (person with a plus). Choose how to send the invitation and whether the other person may only view or also edit. They need FamilyHealth and iCloud on their iPhone. If you see "Sharing needs iCloud", sign in to iCloud first.</p>
+  </details>
+  <details>
+    <summary>How do I stop sharing?</summary>
+    <p>For a shared person the button at the top shows two people. Tap it and choose "Stop Sharing". Invitees can leave a share the same way.</p>
+  </details>
+  <details>
+    <summary>Does every phone in the family have to ring for every reminder?</summary>
+    <p>No. Under <span class="path">Settings → Reminders → Remind on this iPhone for</span> each device chooses whom it reminds about.</p>
+  </details>
+
+  <h2>Reminders</h2>
+  <details>
+    <summary>I don't get any reminders.</summary>
+    <ul>
+      <li>Allow notifications under <span class="path">Settings → Reminders</span>, or in iOS Settings under <span class="path">Notifications → FamilyHealth</span>.</li>
+      <li>Check that the person is switched on under "Remind on this iPhone for".</li>
+      <li>A Focus such as Do Not Disturb can hold notifications back.</li>
+    </ul>
+  </details>
+  <details>
+    <summary>Why don't notifications show medication names?</summary>
+    <p>So nobody reads along on the Lock Screen, they are hidden at first. Switch them on under <span class="path">Settings → Reminders → Medication names</span>.</p>
+  </details>
+  <details>
+    <summary>How do I turn off the morning hint?</summary>
+    <p>Under <span class="path">Settings → Reminders → Overdue and open items</span>. This switch controls the second reminder when a dose is still open two hours later, and the 9:00 hint when something is overdue or running low.</p>
+  </details>
+
+  <h2>Apple Health</h2>
+  <details>
+    <summary>How do I connect Apple Health?</summary>
+    <p>Go to <span class="path">Settings → Apple Health → Connect</span> and allow the values you want. They appear in your own profile, read on this iPhone only and never stored in iCloud.</p>
+  </details>
+  <details>
+    <summary>It says "No data from Apple Health yet".</summary>
+    <p>Open the Health app, tap your profile picture, then <span class="path">Apps → FamilyHealth</span>, and allow reading. iOS does not tell apps whether reading is allowed, so FamilyHealth cannot tell missing data from missing access.</p>
+  </details>
+  <details>
+    <summary>Can I see Apple Health data a relative shares with me in the Health app?</summary>
+    <p>No. iOS does not pass on to any app what others share with you in the Health app.</p>
+    <!-- Copying from Apple Health: remove if the feature is switched off in the store build. -->
+    <p>The way through FamilyHealth: the person being cared for installs the app on their iPhone, chooses the profile shared with them under <span class="path">Settings → Apple Health → Belongs to</span> and switches on "Take over values". Their values then appear in their profile.</p>
+  </details>
+
+  <h2>Emergency, reports, calendar</h2>
+  <details>
+    <summary>How do I create the emergency card or a doctor's report?</summary>
+    <p>Open <span class="path">Family → person</span>, tap the document button at the top, then "Health report" or "Emergency card". The emergency card is also under <span class="path">Emergency → Emergency card as PDF</span>. You can share, print or save both to Files.</p>
+  </details>
+  <details>
+    <summary>How do I copy an appointment to the iOS calendar?</summary>
+    <p>Open the appointment and choose "Add to Calendar". This is a one-time copy; later changes in FamilyHealth are not transferred.</p>
+  </details>
+
+  <h2>Widgets</h2>
+  <details>
+    <summary>How do I add a widget?</summary>
+    <p>Touch and hold an empty spot on the Home Screen, choose <span class="path">Edit → Add Widget</span> and search for FamilyHealth. There are "Medications today", "Next appointments" and "Due". For a single person, touch and hold the widget and choose "Edit Widget".</p>
+  </details>
+  <details>
+    <summary>Can I tick off doses in the widget?</summary>
+    <p>Yes, tap the box in the "Medications today" widget. The app records the dose the next time it runs. With app lock on, widgets only show numbers.</p>
+  </details>
+
+  <h2>Security and data</h2>
+  <details>
+    <summary>How do I protect the app with Face ID?</summary>
+    <p>Under <span class="path">Settings → Lock with Face ID</span>. Your iPhone needs a passcode for this. The app asks after it has been in the background for a minute.</p>
+  </details>
+  <details>
+    <summary>I have a new iPhone. How do I bring my data?</summary>
+    <p>Sign in to iCloud with the same Apple Account and install FamilyHealth; the data comes from iCloud. If the app ran without iCloud so far, the data is only on the old device.</p>
+  </details>
+  <details>
+    <summary>How do I delete all data?</summary>
+    <p>Under <span class="path">Settings → Profile and iCloud → Delete all data</span>. This removes every person with all entries and documents on the device and in iCloud, and cannot be undone.</p>
+  </details>
+  <details>
+    <summary>How is my data protected?</summary>
+    <p>No servers of our own, no ads, no tracking. The details are in the <a href="datenschutz.html#en">privacy policy</a> and in the app under <span class="path">Settings → How your data is protected</span>.</p>
+  </details>
+</article>
+
+<footer>FamilyHealth · Hilfe / Help · <a href="datenschutz.html">Datenschutz / Privacy</a></footer>
+</main>
+</body>
+</html>
