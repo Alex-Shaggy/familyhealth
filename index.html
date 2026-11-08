@@ -3,20 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FamilyHealth</title>
-<meta http-equiv="refresh" content="0; url=support.html">
-<link rel="canonical" href="support.html">
-<style>
-body { margin: 0; background: #F4F1EB; color: #1D1B18; font: 17px/1.6 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
-main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
-a { color: #2B47A6; }
-@media (prefers-color-scheme: dark) { body { background: #12110F; color: #F1EEE8; } a { color: #8FA3F5; } }
-</style>
+<title>FamilyHealth: Familie im Blick</title>
+<meta name="description" content="FamilyHealth für iPhone: Termine, Medikamente, Impfpass und Pflege der ganzen Familie an einem Ort. Ruhig, übersichtlich und ohne Konto.">
+<meta name="robots" content="index, follow">
+<!--
+  Marketing-URL für App Store Connect (Deutsch). Englische Fassung: en.html.
+  Keine externen Schriften, Skripte oder Cookies; Bilder liegen in img/.
+-->
+<link rel="canonical" href="https://alex-shaggy.github.io/familyhealth/">
+<link rel="alternate" hreflang="de" href="https://alex-shaggy.github.io/familyhealth/">
+<link rel="alternate" hreflang="en" href="https://alex-shaggy.github.io/familyhealth/en.html">
+<link rel="alternate" hreflang="x-default" href="https://alex-shaggy.github.io/familyhealth/en.html">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FamilyHealth: Familie im Blick">
+<meta property="og:description" content="Termine, Medikamente, Impfpass und Pflege der ganzen Familie an einem Ort.">
+<meta property="og:image" content="https://alex-shaggy.github.io/familyhealth/img/familie.jpg">
+<meta property="og:locale" content="de_DE">
+<link rel="stylesheet" href="start.css">
 </head>
 <body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="./"><img src="img/favicon.png" alt="" width="32" height="32">FamilyHealth</a>
+  <nav class="lang" aria-label="Sprache / Language">
+    <a href="./" hreflang="de" aria-current="page">Deutsch</a>
+    <a href="en.html" hreflang="en" lang="en">English</a>
+  </nav>
+</header>
+
 <main>
-  <p><strong>FamilyHealth</strong></p>
-  <p><a href="support.html">Hilfe und Kontakt / Help</a> · <a href="datenschutz.html">Datenschutz / Privacy</a></p>
+  <div class="hero">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="img/app-symbol-dunkel.png">
+      <img class="symbol" src="img/app-symbol.png" alt="App-Symbol von FamilyHealth" width="88" height="88">
+    </picture>
+    <p class="eyebrow">FamilyHealth · Familie im Blick</p>
+    <h1>Gesundheit für die ganze Familie.</h1>
+    <p class="lead">Termine, Medikamente, Impfpass und Pflege an einem Ort. FamilyHealth erinnert rechtzeitig, ruhig, übersichtlich und ohne Konto.</p>
+    <ul class="facts">
+      <li>Für iPhone ab iOS 26</li>
+      <li>Deutsch und Englisch</li>
+      <li>Ohne Konto</li>
+    </ul>
+    <!-- Nach der Freigabe hier den Link zum App Store ergänzen (https://apps.apple.com/de/app/id…). -->
+  </div>
+
+  <figure class="banner">
+    <picture>
+      <source media="(max-width: 700px)" srcset="img/familie-mitte.jpg">
+      <img src="img/familie.jpg" width="2400" height="1028" alt="Porträts einer Familie im Kreis, daneben Karten aus der App: eine Pflegeaufgabe, die Familienleiste, offene Einnahmen und ein geprüftes Rezept.">
+    </picture>
+  </figure>
+
+  <section aria-labelledby="bilder">
+    <h2 id="bilder">So sieht es aus</h2>
+    <p class="sub">Echte Ansichten aus der App, von der Begrüßung bis zur Notfallkarte.</p>
+    <ul class="shots" tabindex="0" aria-label="Bilder aus der App, seitlich wischen">
+      <li><img src="img/de-01-start.jpg" width="480" height="1043" loading="lazy" alt="Gesundheit für die ganze Familie: Begrüßung mit der Frage, für wen das erste Profil ist."></li>
+      <li><img src="img/de-02-heute.jpg" width="480" height="1043" loading="lazy" alt="Alles für heute, für alle: die Seite Heute mit der Familienleiste."></li>
+      <li><img src="img/de-03-rezept.jpg" width="480" height="1043" loading="lazy" alt="Rezept fotografieren, Plan steht: ein erkanntes Rezept zum Prüfen."></li>
+      <li><img src="img/de-04-pflege.jpg" width="480" height="1043" loading="lazy" alt="Gemeinsam kümmern: Pflegeaufgaben für Mama mit „Übernehme ich“."></li>
+      <li><img src="img/de-05-sperrbildschirm.jpg" width="480" height="1043" loading="lazy" alt="Abhaken, ohne die App: Widget und Dynamic Island auf dem Sperrbildschirm."></li>
+      <li><img src="img/de-06-angehoerige.jpg" width="480" height="1043" loading="lazy" alt="Bescheid, wenn Mama etwas vergisst: Mitteilung mit „Mama anrufen“."></li>
+      <li><img src="img/de-07-einfach.jpg" width="480" height="1043" loading="lazy" alt="Groß und einfach: die einfache Ansicht für Eltern."></li>
+      <li><img src="img/de-08-arztbesuch.jpg" width="480" height="1043" loading="lazy" alt="Nach dem Arzt kurz diktiert: das geordnete Ergebnis eines Besuchs."></li>
+      <li><img src="img/de-09-notfall.jpg" width="480" height="1043" loading="lazy" alt="Notfallinfos in Sekunden: Notfallkarte mit 112 und 116 117."></li>
+      <li><img src="img/de-10-datenschutz.jpg" width="480" height="1043" loading="lazy" alt="Deine Daten bleiben deine: kein Konto, keine Werbung, verschlüsselt, keine eigenen Server."></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="funktionen">
+    <h2 id="funktionen">Was FamilyHealth kann</h2>
+    <p class="sub">Für dich, deine Kinder und deine Eltern, auch wenn ihr nicht unter einem Dach wohnt.</p>
+    <ul class="features">
+      <li><h3>Heute auf einen Blick</h3><p>Ein Ring je Person zeigt, ob alles in Ordnung ist. Offene Einnahmen, Termine, Fälliges und Pflegeaufgaben stehen auf einer Seite.</p></li>
+      <li><h3>Medikamente</h3><p>Rezept oder Medikationsplan fotografieren und prüfen, dann stehen Plan, Erinnerungen und Vorrat. Abhaken in der Mitteilung, im Widget oder auf dem Sperrbildschirm.</p></li>
+      <li><h3>Termine und Arztbesuche</h3><p>Mit Checkliste und Fragen an den Arzt. Danach den Besuch diktieren und auf dem iPhone ordnen lassen, auf unterstützten Geräten mit Apple Intelligence.</p></li>
+      <li><h3>Impfpass und Vorsorge</h3><p>Digitaler Impfpass mit nächster Auffrischung und die gesetzliche Vorsorge in Deutschland nach Alter und Geschlecht, von der U2 bis zur Krebsfrüherkennung.</p></li>
+      <li><h3>Gemeinsam kümmern</h3><p>Das Profil der Eltern mit Geschwistern teilen, Pflegeaufgaben verteilen und Bescheid bekommen, wenn Mama eine Einnahme noch nicht abgehakt hat.</p></li>
+      <li><h3>Einfache Ansicht</h3><p>Für Eltern: große Schrift und nur, was heute zählt, mit einem Knopf je Einnahme, dem nächsten Termin und dem Notruf.</p></li>
+      <li><h3>Notfallkarte</h3><p>Blutgruppe, Allergien, Medikamente und Notfallkontakte auf einen Blick, 112 und 116 117 mit einem Tipp, als PDF zum Teilen.</p></li>
+      <li><h3>Dokumente und Werte</h3><p>Arztbriefe scannen und durchsuchen, Blutdruck oder Blutzucker im Diagramm, auf Wunsch mit Werten aus Apple Health.</p></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="daten">
+    <div class="privacy">
+      <h2 id="daten">Deine Daten bleiben deine.</h2>
+      <p class="sub" style="margin-bottom:0">Gespeichert auf deinen Geräten und in deinem eigenen iCloud-Konto. Texterkennung und Zusammenfassungen laufen auf dem iPhone.</p>
+      <ul class="checks">
+        <li>Kein Konto nötig</li>
+        <li>Keine Werbung, kein Tracking</li>
+        <li>Verschlüsselt in deinem iCloud</li>
+        <li>Keine eigenen Server</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <p class="note"><strong>Hinweis:</strong> FamilyHealth organisiert und erinnert. Die App ist kein Medizinprodukt und ersetzt keinen ärztlichen Rat. Im Notfall: 112.</p>
+  </section>
 </main>
+
+<footer>
+  <span>FamilyHealth</span>
+  <a href="support.html">Hilfe und Kontakt</a>
+  <a href="datenschutz.html">Datenschutz</a>
+  <a href="mailto:alexshagov@icloud.com?subject=FamilyHealth">alexshagov@icloud.com</a>
+</footer>
+</div>
 </body>
 </html>
